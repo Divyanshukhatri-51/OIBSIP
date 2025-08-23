@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    width: 100vw;
+    /* height: 100vh; */
+    overflow-x: hidden;
+}
+.main{
+    height: 70vh;
+    background: url('images/landscape.jpg')no-repeat center;
+    background-size: cover;
+}
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+.list li{
+    margin: 10px;
+    padding: 8px 15px;
+    border-radius: 30px;
+}
+.list li:hover{
+    background-color: rgb(3, 3, 3,0.3);
+    cursor: pointer;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.page {
+    background-color: rgb(45, 67, 168);
+}
+main h1{
+    margin: 100px 50px;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+.card{
+    border-radius: 10px;
+    background-color: rgb(27, 105, 150);
+    overflow-x: hidden;
+    animation: slideInRight 1s ease forwards;
+}
+.card img{
+    margin: 0%;
+    width: 100%;
+    border-radius: 10px;
+}
+.text{
+    margin: 10px;
+}
+h1,h3{
+    overflow: hidden;
+}
+.about{
+    width: 50%;
+}
+.form{
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: rgb(55, 10, 77);
+    color: white;
+    width: 350px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+}
+label{
+    display: block;
+    margin: 10px 0px;
+}
+input,textarea{
+    border-radius: 12px;
+    padding: 7px;
+    background-color: black;
+    color: gray;
+}   
+button{
+    width: 200px;
+    border-radius: 12px;
+    padding: 7px;
+    background-color: black;
+    color: grey;
+}
+
+@keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+.right{
+    position: relative;
+    margin-left: 50%;
+    overflow-x: hidden;
+    animation: slideInRight 1s ease forwards;
+}
+
+.left{
+    position: relative;
+    margin-right: 50%;
+    overflow-x: hidden;
+    animation: slideInLeft 1s ease forwards;
+}
