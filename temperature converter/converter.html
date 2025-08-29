@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="converter.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <input type="number" placeholder="Enter value" id="input">
+            <label for="from">FROM:
+            <select name="" id="from" class="choice">
+                <option value="celsius">celsius</option>
+                <option value="farenheit">Farenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+            </label>
+            <label for="to">TO:
+            <select name="" id="to" class="choice">
+                <option value="farenheit">Farenheit</option>
+                <option value="celsius">celsius</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+            </label>
+            <button id="btn">Convert</button>
+            <p id="value"></p>
+        </div>
+    </div>
+    <script src="converter.js"></script>
+</body>
+</html>

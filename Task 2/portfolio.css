@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    color: white;
+    background-color: #242424;
+    /* scroll-behavior: smooth; */
+}
+.main{
+    margin: 0px;
+    height: 550px;
+    padding: 25px;
+    background-color: black;
+}
+.head{
+    /* margin: 12px 25px; */
+    padding: 10px;
+    background-color: rgba(50, 50, 50, 0.3);
+    /* opacity: 0.5; */
+    display: flex;
+    justify-content: space-between;
+    border-radius: 40px;
+}
+
+.head h2{
+    margin: auto 80px;
+}
+/* .nav{
+
+} */
+
+.list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    text-decoration: none;
+    margin-right: 70px;
+}
+
+.item {
+    padding: 10px;
+    margin: 10px;
+    background-color: #232323;
+    border-radius: 10px;
+}
+
+.item a{
+    text-decoration: none;
+    color: white;
+    transition-duration: 1s;
+    
+}
+
+.info {
+    margin: 0px 60px;
+    display: flex;
+    /* background-color: black; */
+}
+.left, .right{
+    width: 50%;
+    padding: 40px;
+    text-align: justify;
+}
+
+img{
+    width: 70%;
+    height: 70%;
+    /* margin: auto; */
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+h5{
+    font-size: 40px;
+}
+h1{
+    width: 10ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+    margin-bottom: 40px;
+    font-size: 40px;
+    animation: erase 2s steps(10) 1s forwards,typing 2s steps(10) 1s forwards, blink .7s step-end forwards;
+}
+
+@keyframes typing {
+    from {width: 9ch;}
+    to {width: 19ch;}
+}
+@keyframes erase {
+    from {width: 19ch;}
+    to {width: 9ch;}
+}
+
+@keyframes blink{
+    50% {border-color: transparent;}
+    100% {border-color: transparent;}
+}
+
+#skills{
+    margin: 30px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+#projects{
+    margin: 30px;
+    padding: 30px;
+    display: flex;
+}
+.project {
+    margin: 20px;
+    padding: 20px;
+    background-color: black;
+    width: 30%;
+    border-radius: 20px;
+}
+
+.proj-title, .techs, .desc {
+    margin: 12px;
+}
+
+p > span{
+    font-size: 20px;
+}
+
+.about-title{
+    text-align: center;
+    font-size: 35px;
+}
+.about-info{
+    margin: 60px;
+}
+
+.contact{
+    margin: 40px;
+}
+.links>p{
+    padding: 10px;
+    margin: auto;
+    background-color: black;
+}
